@@ -2,8 +2,11 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DERPAGE</title>
@@ -15,26 +18,26 @@
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Fonts from Font Awsome -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/icheck/css/_all.css">
     <!-- CSS Animate -->
     <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Custom styles for this theme -->
     <link rel="stylesheet" href="assets/css/main.css">
-     <!-- DataTables-->
-    <link rel="stylesheet" href="assets/plugins/dataTables/css/dataTables.css">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <!-- Feature detection -->
-     <script src="assets/js/modernizr-2.6.2.min.js"></script>
+    <script src="assets/js/modernizr-2.6.2.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-    </head>
-    <body>
+</head>
+
+<body>
     <section id="container">
+        <!--sidebar start-->
         <header id="header">
             <!--logo start-->
             <div class="brand">
@@ -158,15 +161,15 @@
                 </ul>
             </div>
         </header>
-        <!--sidebar start-->
-        <aside class="sidebar" style="background:  #455a64"><!-- Pinta de un color beish oscuro el SideBar -->
+        <!--sidebar left start-->
+        <aside class="sidebar" style="background:  #455a64"> <!-- Pinta de un color beish oscuro el SideBar -->
 
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
                     <li>
                         <a href="index.html"><i class="fa fa-dashboard"></i><span>Informe</span></a>
                     </li>
-                    <li class="sub-menu ">
+                    <li class="sub-menu">
                         <a href="javascript:void(0);"><i class="fa fa-text-height"></i><span>Artículos</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
                             <li>
@@ -188,12 +191,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sub-menu active">
-                        <a href="#"><i class="fa fa-edit"></i><span>Suscriptores</span></a>
+                    <li class="sub-menu">
+                        <a href="suscriptores.html"><i class="fa fa-edit"></i><span>Suscriptores</span></a>
                         <ul>
+
                         </ul>
                     </li>
-                    <li class="sub-menu">
+                    <li class="sub-menu active">
                         <a href="javascript:void(0);"><i class="fa fa-file"></i><span>Opciones</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
                             <li>
@@ -202,8 +206,8 @@
                             <li>
                                 <a href="opcion-cambio-pass.html">Cambiar Contraseña</a>
                             </li>
-                            <li>
-                                <a href="opcion-editar-perfil.html">Editar Perfil</a>
+                            <li class="active">
+                                <a href="#">Editar Perfil</a>
                             </li>
                             <li>
                                 <a href="opcion-login.html">Salir</a>
@@ -213,75 +217,125 @@
                 </ul>
             </div>
         </aside>
-         <!--sidebar end-->
-         <!--main content start-->
-         <section class="main-content-wrapper">
+        <!--sidebar left end-->
+        <!--main content start-->
+        <section class="main-content-wrapper">
             <section id="main-content">
                 <div class="row">
                     <div class="col-md-12">
-                        <br>
-                        <h1 class="h1">Lista de Suscriptores</h1>
+                        <!--breadcrumbs start -->
+                        <ul class="breadcrumb">
+                            <li>Opciones</li>
+                            <li class="active">Editar Perfil</li>
+                        </ul>
+                        <!--breadcrumbs end -->
+                        <h1 class="h1">Editar Perfil</h1>
                     </div>
                     <div class="col-md-12">
-                        <div class="alert alert-success alert-dismissable">
-                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                            <strong>¡Listo!</strong> Se ha editado correctamente al suscriptor.
+                            <div class="alert alert-success alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                <strong>¡Listo!</strong> Se ha editado correctamente su perfil.
+                            </div>
+                            <div class="alert alert-danger alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                <strong>¡Lo sentimos!</strong> No se ha podido editar correctamente su perfil.
+                            </div>
                         </div>
-                        <div class="alert alert-danger alert-dismissable">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                            <strong>¡Lo sentimos!</strong> No se ha podido editar correctamente al suscriptor.
-                        </div>
-                    </div>
                 </div>
-
                 <div class="row">
                     <div class="col-md-12">
                         <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Datos Personales</h3>
+                            </div>
                             <div class="panel-body">
-                                <table id="example" class="table table-bordered table-hover" cellspacing="0" width="100%" style="text-align: center;">
-                                    <thead>
-                                        <tr>
-                                            <th>Apellido Paterno</th>
-                                            <th>Apellido Materno</th>
-                                            <th>Nombres</th>
-                                            <th>Correo</th>
-                                            <th>Teléfono</th>
-                                            <th>Opciones</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>
-                                                <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalUpdate"><i class="fa fa-refresh" ></i></a>                                       
-                                                <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-remove"></i></a>                                    
-                                            </td>   
-                                        </tr>
-                                        <tr>
-                                            <td>Nicolas</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>
-                                                <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalUpdate"><i class="fa fa-refresh" ></i></a>                                       
-                                                <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-remove"></i></a>                                    
-                                            </td>   
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <form class="form-horizontal form-border" id="form" role ="form">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Resumen</label>
+                                        <div class="col-sm-6">
+                                           <textarea class="form-control" placeholder="Ingrese un resumen "></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Nombres y Apellidos</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" required="" placeholder="Ingrese sus nombres y apellidos">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Género</label>
+                                        <div class="col-sm-6">
+                                            <label class="radio-inline">
+                                            <input class="icheck" type="radio" checked="" name="rad1">Mujer</label>
+                                            <label class="radio-inline">
+                                            <input class="icheck" type="radio" name="rad1">Hombre</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Cumpleaños</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="input1" id="input1" required="" placeholder="DD/MM/AAAA">
+                                        </div> 
+                                    </div>                                   
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Estado Civil</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" required="" placeholder="Solter@/Casa@...">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label  class="col-sm-3 control-label" for="InputFile">Foto de Perfil</label>
+                                        <div class="col-sm-6">
+                                            <input  type="file" id="InputFile">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Datos de Contacto</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form class="form-horizontal form-border" id="form">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Número de Contacto</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" required="" placeholder="Celular o Teléfono">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Correo Electónico</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" required="" placeholder="E-mail">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Linkedin</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" required="" placeholder="Linkedin">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">Facebook</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" required="" placeholder="Facebook">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-7 col-sm-9">
+                                            <button type="submit" class="btn btn-info">Editar</button>
+                                            <button type="submit" class="btn btn-info">Cancelar</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
         </section>
-         <!--main content end-->
-                 <!--sidebar right start-->
+        <!--main content end-->
+        <!--sidebar right start-->
         <aside class="sidebarRight">
            <div id="rightside-navigation">
                 <div class="sidebar-heading"><i class="fa fa-user"></i> Contacts</div>
@@ -366,89 +420,21 @@
         </aside>
         <!--sidebar right end-->
     </section>
-    <div class="modal fade" id="modalUpdate" tabindex="-1" role="dialog" aria-labelledby="modalUpdateLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="modalUpdateLabel"> Editar Suscriptor</h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label for="inputApPat" class="col-sm-3 control-label">Apellido Paterno</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="inputApPat" placeholder="Apellido Paterno">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputApMat" class="col-sm-3 control-label">Apellido Materno</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="inputApMat" placeholder="Apellido Materno">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputNombres" class="col-sm-3 control-label">Nombres</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="inputNombres" placeholder="Nombres">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputCorreo" class="col-sm-3 control-label">Correo</label>
-                            <div class="col-sm-9">
-                                <input type="email" class="form-control" id="inputCorreo" placeholder="Correo">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputTelef" class="col-sm-3 control-label">Teléfono</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="inputTelef" placeholder="Teléfono">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
-                            <div class="col-sm-9">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Editar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modalDeleteLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="modalDeleteLabel">Aviso!</h4>
-          </div>
-          <div class="modal-body">
-            ¿Está seguro que desea eliminar al suscriptor xxxxxx?
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-info" data-dismiss="modal">Eliminar</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-     <!--Global JS-->
+    <!--Global JS-->
     <script src="assets/js/jquery-1.10.2.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/plugins/waypoints/waypoints.min.js"></script>
-    <script src="assets/plugins/nanoScroller/jquery.nanoscroller.min.js"></script>
     <script src="assets/js/application.js"></script>
-    <!--Page Leve JS -->
-    <script src="assets/plugins/dataTables/js/jquery.dataTables.js"></script>
-    <script src="assets/plugins/dataTables/js/dataTables.bootstrap.js"></script>
+    <!--Page Level JS-->
+    <script src="assets/plugins/mask/js/jquery.maskedinput.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#example').dataTable();
+            $("#input1").mask("99/99/9999");
+            $("#input2").mask('(999) 999-9999');
+            $("#input3").mask("(999) 999-9999? x99999");
+            $("#input4").mask("99-9999999");
+            $("#input5").mask("999-99-9999");
+            $("#input6").mask("a*-999-a999");
         });
     </script>
            <script>
@@ -462,5 +448,15 @@
 
 </script>
 
-    </body>
+    <script>
+        $(document).ready(function() {
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_flat-grey',
+                radioClass: 'iradio_flat-grey'
+            });
+
+        });
+    </script>
+</body>
+
 </html>

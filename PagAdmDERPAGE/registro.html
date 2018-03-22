@@ -2,8 +2,11 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DERPAGE</title>
@@ -19,21 +22,19 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Custom styles for this theme -->
     <link rel="stylesheet" href="assets/css/main.css">
-     <!-- DataTables-->
-    <link rel="stylesheet" href="assets/plugins/dataTables/css/dataTables.css">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <!-- Feature detection -->
-     <script src="assets/js/modernizr-2.6.2.min.js"></script>
+    <script src="assets/js/modernizr-2.6.2.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-    </head>
-    <body>
+</head>
+
+<body>
     <section id="container">
         <header id="header">
             <!--logo start-->
@@ -158,15 +159,15 @@
                 </ul>
             </div>
         </header>
-        <!--sidebar start-->
-        <aside class="sidebar" style="background:  #455a64"><!-- Pinta de un color beish oscuro el SideBar -->
+        <!--sidebar left start-->
+        <aside class="sidebar" style="background:  #455a64"> <!-- Pinta de un color beish oscuro el SideBar -->
 
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
-                    <li>
+                    <li class="active">
                         <a href="index.html"><i class="fa fa-dashboard"></i><span>Informe</span></a>
                     </li>
-                    <li class="sub-menu ">
+                    <li class="sub-menu">
                         <a href="javascript:void(0);"><i class="fa fa-text-height"></i><span>Artículos</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
                             <li>
@@ -188,9 +189,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sub-menu active">
-                        <a href="#"><i class="fa fa-edit"></i><span>Suscriptores</span></a>
+                    <li class="sub-menu">
+                        <a href="suscriptores.html"><i class="fa fa-edit"></i><span>Suscriptores</span></a>
                         <ul>
+
                         </ul>
                     </li>
                     <li class="sub-menu">
@@ -213,75 +215,171 @@
                 </ul>
             </div>
         </aside>
-         <!--sidebar end-->
-         <!--main content start-->
-         <section class="main-content-wrapper">
+        <!--sidebar left end-->
+        <!--main content start-->
+        <section class="main-content-wrapper">
             <section id="main-content">
                 <div class="row">
                     <div class="col-md-12">
-                        <br>
-                        <h1 class="h1">Lista de Suscriptores</h1>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="alert alert-success alert-dismissable">
-                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                            <strong>¡Listo!</strong> Se ha editado correctamente al suscriptor.
-                        </div>
-                        <div class="alert alert-danger alert-dismissable">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                            <strong>¡Lo sentimos!</strong> No se ha podido editar correctamente al suscriptor.
-                        </div>
+                        <!--breadcrumbs start -->
+                        <ul class="breadcrumb">
+                            <li><a href="#">Dashboard</a>
+                            </li>
+                            <li>Forms</li>
+                            <li class="active">Wizard</li>
+                        </ul>
+                        <!--breadcrumbs end -->
+                        <h1 class="h1">Wizard</h1>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
                         <div class="panel panel-default">
-                            <div class="panel-body">
-                                <table id="example" class="table table-bordered table-hover" cellspacing="0" width="100%" style="text-align: center;">
-                                    <thead>
-                                        <tr>
-                                            <th>Apellido Paterno</th>
-                                            <th>Apellido Materno</th>
-                                            <th>Nombres</th>
-                                            <th>Correo</th>
-                                            <th>Teléfono</th>
-                                            <th>Opciones</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>
-                                                <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalUpdate"><i class="fa fa-refresh" ></i></a>                                       
-                                                <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-remove"></i></a>                                    
-                                            </td>   
-                                        </tr>
-                                        <tr>
-                                            <td>Nicolas</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>
-                                                <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalUpdate"><i class="fa fa-refresh" ></i></a>                                       
-                                                <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-remove"></i></a>                                    
-                                            </td>   
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Form Wizard</h3>
+                                <div class="actions pull-right">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <i class="fa fa-times"></i>
+                                </div>
                             </div>
+                            <div class="panel-body">
+                                <section class="fuelux">
+                                    <div id="MyWizard" class="wizard">
+                                        <ul class="steps">
+                                            <li data-target="#step1" class="active"><span class="badge badge-info">1</span>Step 1<span class="chevron"></span>
+                                            </li>
+                                            <li data-target="#step2"><span class="badge">2</span>Step 2<span class="chevron"></span>
+                                            </li>
+                                            <li data-target="#step3"><span class="badge">3</span>Step 3<span class="chevron"></span>
+                                            </li>
+                                        </ul>
+                                        <div class="actions">
+                                            <button type="button" class="btn btn-default btn-mini btn-prev"> <i class="fa fa-chevron-left"></i> Prev</button>
+                                            <button type="button" class="btn btn-primary btn-mini btn-next" data-last="Finish">Next <i class="fa fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="step-content">
+                                        <div class="step-pane active" id="step1">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <div class="col-sm-3">
+                                                        <h2 class="title">User Info</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">First Name</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">Last Name</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">Password</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="password" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="step-pane" id="step2">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <div class="col-sm-3">
+                                                        <h2 class="title">User Address</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">Address</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">Country</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-control">
+                                                            <option value="">Country</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">City</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">State</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-control">
+                                                            <option value="">State</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">Zip</label>
+                                                    <div class="col-sm-1">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="step-pane" id="step3">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <div class="col-sm-3">
+                                                        <h2 class="title">Payment Info</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">Card No</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">Expiration</label>
+                                                    <div class="col-sm-3">
+                                                        <select class="form-control">
+                                                            <option value="">Month</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <select class="form-control">
+                                                            <option value="">Year</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">CSV</label>
+                                                    <div class="col-sm-1">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+
                         </div>
                     </div>
+
                 </div>
+                </div>
+
             </section>
         </section>
-         <!--main content end-->
-                 <!--sidebar right start-->
+        <!--main content end-->
+        <!--sidebar right start-->
         <aside class="sidebarRight">
            <div id="rightside-navigation">
                 <div class="sidebar-heading"><i class="fa fa-user"></i> Contacts</div>
@@ -366,89 +464,16 @@
         </aside>
         <!--sidebar right end-->
     </section>
-    <div class="modal fade" id="modalUpdate" tabindex="-1" role="dialog" aria-labelledby="modalUpdateLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="modalUpdateLabel"> Editar Suscriptor</h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label for="inputApPat" class="col-sm-3 control-label">Apellido Paterno</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="inputApPat" placeholder="Apellido Paterno">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputApMat" class="col-sm-3 control-label">Apellido Materno</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="inputApMat" placeholder="Apellido Materno">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputNombres" class="col-sm-3 control-label">Nombres</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="inputNombres" placeholder="Nombres">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputCorreo" class="col-sm-3 control-label">Correo</label>
-                            <div class="col-sm-9">
-                                <input type="email" class="form-control" id="inputCorreo" placeholder="Correo">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputTelef" class="col-sm-3 control-label">Teléfono</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="inputTelef" placeholder="Teléfono">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
-                            <div class="col-sm-9">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Editar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modalDeleteLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="modalDeleteLabel">Aviso!</h4>
-          </div>
-          <div class="modal-body">
-            ¿Está seguro que desea eliminar al suscriptor xxxxxx?
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-info" data-dismiss="modal">Eliminar</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-     <!--Global JS-->
+    <!--Global JS-->
     <script src="assets/js/jquery-1.10.2.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/plugins/waypoints/waypoints.min.js"></script>
-    <script src="assets/plugins/nanoScroller/jquery.nanoscroller.min.js"></script>
     <script src="assets/js/application.js"></script>
-    <!--Page Leve JS -->
-    <script src="assets/plugins/dataTables/js/jquery.dataTables.js"></script>
-    <script src="assets/plugins/dataTables/js/dataTables.bootstrap.js"></script>
+    <!--Page Level JS-->
+    <script src="assets/plugins/wizard/js/loader.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#example').dataTable();
+            $('#myWizard').wizard()
         });
     </script>
            <script>
@@ -461,6 +486,6 @@
         ga('send', 'pageview');
 
 </script>
+</body>
 
-    </body>
 </html>
