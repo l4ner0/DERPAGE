@@ -219,18 +219,22 @@
             <section id="main-content">
                 <div class="row">
                     <div class="col-md-12">
-                        <br>
-                        <h1 class="h1">Lista de Suscriptores</h1>
-                    </div>
-                    <div class="col-md-12">
                         <div class="alert alert-success alert-dismissable">
                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                             <strong>¡Listo!</strong> Se ha editado correctamente al suscriptor.
                         </div>
+                    </div>
+                    <div class="col-md-12"> 
                         <div class="alert alert-danger alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                             <strong>¡Lo sentimos!</strong> No se ha podido editar correctamente al suscriptor.
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <br>
+                        <h1 class="h1">Lista de Suscriptores</h1>
                     </div>
                 </div>
 
@@ -238,42 +242,45 @@
                     <div class="col-md-12">
                         <div class="panel panel-default">
                             <div class="panel-body">
-                                <table id="example" class="table table-bordered table-hover" cellspacing="0" width="100%" style="text-align: center;">
-                                    <thead>
-                                        <tr>
-                                            <th>Apellido Paterno</th>
-                                            <th>Apellido Materno</th>
-                                            <th>Nombres</th>
-                                            <th>Correo</th>
-                                            <th>Teléfono</th>
-                                            <th>Opciones</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>
-                                                <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalUpdate"><i class="fa fa-refresh" ></i></a>                                       
-                                                <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-remove"></i></a>                                    
-                                            </td>   
-                                        </tr>
-                                        <tr>
-                                            <td>Nicolas</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>
-                                                <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalUpdate"><i class="fa fa-refresh" ></i></a>                                       
-                                                <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-remove"></i></a>                                    
-                                            </td>   
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="table-responsive">
+                                   <table id="example" class="table table-bordered table-hover" cellspacing="0" width="100%" style="text-align: center;">
+                                        <thead>
+                                            <tr>
+                                                <th>Apellido Paterno</th>
+                                                <th>Apellido Materno</th>
+                                                <th>Nombres</th>
+                                                <th>Correo</th>
+                                                <th>Teléfono</th>
+                                                <th>Opciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>
+                                                    <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalUpdate"><i class="fa fa-refresh" ></i></a>                                       
+                                                    <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-remove"></i></a>                                    
+                                                </td>   
+                                            </tr>
+                                            <tr>
+                                                <td>Nicolas</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>
+                                                    <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalUpdate"><i class="fa fa-refresh" ></i></a>                                       
+                                                    <a href="#" role="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-remove"></i></a>                                    
+                                                </td>   
+                                            </tr>
+                                        </tbody>
+                                    </table> 
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

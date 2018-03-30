@@ -223,6 +223,20 @@
             <section id="main-content">
                 <div class="row">
                     <div class="col-md-12">
+                        <div class="alert alert-success alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <strong>¡Listo!</strong> Se ha creado correctamente su artículo.
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="alert alert-danger alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <strong>¡Lo sentimos!</strong> No se ha podido crear correctamente su artículo.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
                         <!--breadcrumbs start -->
                         <ul class="breadcrumb">
                             <li><a href="#">Artículo</a>
@@ -230,44 +244,78 @@
                             <li class="active">Crear Artículo</li>
                         </ul>
                         <!--breadcrumbs end -->
-                        <h1 class="h1">Crear Artículo</h1>
-                        <div class="col-md-12">
-                            <div class="alert alert-success alert-dismissable">
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                <strong>¡Listo!</strong> Se ha creado correctamente su artículo.
-                            </div>
-                            <div class="alert alert-danger alert-dismissable">
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                <strong>¡Lo sentimos!</strong> No se ha podido crear correctamente su artículo.
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control">
-                                <option value="">Elija la etiqueta</option>
-                                <option value="">Opción 1</option>
-                                <option value="">Opción 2</option>
-                                <option value="">Opción 3</option>
-                                <option value="">Opción 4</option>
-                            </select>
-                        </div>
+                        <h1 class="h1">Crear Artículo</h1> 
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Editor de texto</h3>
-                            </div>
-                            <div class="panel-body">
-                                <textarea class="textarea form-control" rows="10" cols="80" placeholder="Escribe algo ..." style="width: 100%; height: 200px"></textarea>
-                                <br>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-10 col-sm-12">
-                                        <button type="submit" class="btn btn-info">Crear</button>
-                                        <button type="submit" class="btn btn-info">Cancelar</button>
-                                    </div>
+                                <h3 class="panel-title"><b>Portada del Articulo</b></h3>
+                                <div class="actions pull-right">
+                                    <i class="fa fa-chevron-down"></i>
                                 </div>
                             </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <label>Titulo del Artículos</label>
+                                        <input type="text" name="" class="form-control" placeholder="Título del Artículo">
+                                    </div>
+                                    <div class="col-md-4 col-sm-offset-2">
+                                        <label for="exampleInputFile">Imagen Introducción</label>
+                                        <input type="file" id="exampleInputFile">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <br>
+                                        <label>Introducción</label>                  
+                                        <textarea class="form-control" rows="10" cols="80" placeholder="Ingrese un resumen ..." style="width: 100%; height: 80px"></textarea>
+                                    </div>
+                                </div>
+                                <br>
+                                <a role="button" href="vista-previa-portada.html" class="btn btn-info btn-xs">Vista Previa</a>  
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><b>Elementos del Articulo</b></h3>
+                                <div class="actions pull-right">
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <label>Etiqueta</label>
+                                        <select class="form-control">
+                                            <option value="">Elija la etiqueta</option>
+                                            <option value="">Opción 1</option>
+                                            <option value="">Opción 2</option>
+                                            <option value="">Opción 3</option>
+                                            <option value="">Opción 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-5 col-sm-offset-2">
+                                        <label for="exampleInputFile">Banner</label>
+                                        <input type="file" id="exampleInputFile">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <br>
+                                        <label>Texto del Artículo</label>
+                                        <textarea class="textarea form-control" rows="10" cols="80" placeholder="Escriba su artículo ..." style="width: 100%; height: 200px"></textarea>
+                                        <br>
+                                        <div class="form-group">
+                                            <a role="button" href="vista-previa-articulo.html" class="btn btn-info btn-xs">Vista Previa</a>
+                                            <div class="col-sm-offset-10 col-sm-12">
+                                                <button type="submit" class="btn btn-info">Crear</button>
+                                                <button type="submit" class="btn btn-info">Cancelar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
                         </div>
                     </div>
                 </div>
